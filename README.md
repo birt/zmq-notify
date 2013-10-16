@@ -40,5 +40,6 @@ $ zmq-notify-send "This should work too"
 * in tmux:
 
     :set -g status-right '#(zmq-notify-get.py)'
+
     :set -g status-interval 5
 
