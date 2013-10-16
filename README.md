@@ -35,9 +35,7 @@ $ zmq-notify-send This is a notification
 $ zmq-notify-send "This should work too"
 
 
-## But where do you display the notifications?
+###But where do you display the notifications?
 
 
-Requirements
-------------
 
