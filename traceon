@@ -1,0 +1,2 @@
+#!/bin/bash
+export PROMPT_COMMAND='LASTCOMMAND=$(history 1); MYTTY=$(tty); zmq-notify-send.py command "${LASTCOMMAND:7}" finished on $MYTTY'
