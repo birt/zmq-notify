@@ -37,5 +37,8 @@ $ zmq-notify-send "This should work too"
 
 ###But where do you display the notifications?
 
+* in tmux:
 
+> :set -g status-right '#(zmq-notify-get.py)'
+> :set -g status-interval 5
 
