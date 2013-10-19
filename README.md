@@ -43,3 +43,12 @@ $ zmq-notify-send "This should work too"
 
     :set -g status-interval 5
 
+###Tracking when a command in a terminal is finished
+
+* export PROMPT_COMMAND='BLAH=$(history 1); MYTTY=$(tty); zmq-notify-send.py command "${BLAH:7}" finished on $MYTTY'
+* or put it in a file, e.g. traceon in the repo and do this:
+    $ . traceon
+* when you want to 'unfollow' a terminal, do:
+    $ unset PROMPT_COMMAND
+* or:
+    $ . traceoff
